@@ -1,0 +1,42 @@
+/* Подвал сайта*/
+
+.page-footer {
+    background-color:#222222;
+    color: #fff;
+    padding: 24px 0 23px 0;
+    @media (max-width: 767px) {
+      padding-top: 43px;
+      padding-bottom: 9px;
+      } 
+    }
+
+.footer-wrap{
+  @include flex-sp-between;
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+    }
+}
+
+.footer-nav {
+  width: 150px;
+  @include flex-sp-between;
+}
+.social-link {
+  color: #000;
+  text-decoration: none;
+  font-size:16px;
+  background-color: #fff;
+  width: 32px;
+  height: 32px;
+  @include flex-center;
+}
+.social-link:hover {
+  @include concept-hover;
+}
+
+@media (max-width: 767px) {
+  .copyright {
+   margin-top: 40px;
+   margin-bottom: 0;
+  }
+} 

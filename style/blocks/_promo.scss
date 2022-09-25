@@ -1,0 +1,64 @@
+/*Реклама*/
+
+.promo {
+    background: #F1E4E6;
+    }
+    
+    .promo-wrap {
+    height: 760px;
+    background-image: url(../pic/promo_man.png);
+    background-repeat: no-repeat;
+    background-position: -230px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @media (max-width: 1172px) {
+      height: 368px;
+      background-size: contain;
+      background-position: -108px 0;
+      }
+    @media (max-width: 767px) {
+      background-image: none;
+      align-items: center;
+      justify-content: center;
+      }  
+    }
+    
+    .promo-title {
+    margin-right: 103px;
+    margin-top: -60px;
+    
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+    
+    border-left: 12px solid $concept-color;
+    padding-left: 16px;
+    
+    &-bold {
+        font-weight: 900;
+      font-size: 48px;
+      line-height: 58px;
+      color: #222222;
+      @media (max-width: 1172px) {
+        font-size: 44px;
+        line-height: 53px;
+        }
+    }
+    
+    &-pink {
+    color: $concept-color;
+    }
+
+    @media (max-width: 1172px) {
+    font-size: 24px;
+    line-height: 29px;
+    margin-right: 0;
+    }
+}
+    
+    
+    
+    
+    

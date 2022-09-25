@@ -1,0 +1,47 @@
+/* Особенности магазина*/
+
+.features {
+    background-color: #222222;
+    color: #fff; 
+    padding: 90px 0;
+    @media (max-width: 1172px) {
+    padding-top: 48px; 
+    padding-bottom: 67px;
+    }
+    }
+    
+    .features-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0;
+    @media (max-width: 1172px) {
+      flex-direction: column;
+      align-items: center;
+      gap:30px;
+      margin: 0 auto;
+    }
+    }
+    
+    .features-item {
+    width: 360px;
+    text-align: center;
+    }
+    
+    .feature-text-box{
+      padding: 0 30px;
+    }
+    
+    .feature-stocks {
+    font-weight: normal;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    }
+    
+    .feature-text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #cac7c7;
+    }

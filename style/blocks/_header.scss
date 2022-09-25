@@ -1,0 +1,130 @@
+/*Шапка*/
+.page-header {
+    background-color:#222222;
+    color: #fff;
+    padding: 18px 0; 
+  }
+  
+  .header-wrap{
+    @include flex-sp-between;
+    }
+  
+  .header-col {
+    width: 112px;
+    @include flex-sp-between;
+    }
+  
+  .header-nav {
+    width: 170px;
+    @include flex-sp-between;
+    @media (max-width: 767px) {
+      flex-direction: row-reverse;
+      } 
+  }
+
+    .header-icon svg {
+      fill:#E8E8E8;
+    }
+    .header-icon:hover svg {
+      fill:$concept-color;
+    }
+
+    
+      @media (max-width: 767px) {
+       .header-icon2 { display: none;}
+    }
+
+    .header-icon2 svg{
+      fill:#E8E8E8;
+    }
+    .header-icon2:hover svg {
+      fill:$concept-color;
+    }
+
+    .burger {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .main-nav {
+      width: 232px;
+      height: 760px;
+      padding: 20px;
+      box-sizing: border-box;
+      background: #FFFFFF;
+      box-shadow: $shadow;
+      position: absolute;
+      right: 0;
+      top: 76px;
+      transform-origin: top right;
+
+      &--open {
+        transform: scaleY(1);
+      }
+
+      &--close {
+        transform: scaleY(0);
+      }
+    }
+   
+    .main-nav-box {
+      position: relative;
+      }
+
+    .main-nav-close {
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      &:hover {
+        color: $concept-color;
+        cursor: pointer;
+      }
+    }
+
+    .main-nav-title {
+     font-weight: bold;
+     font-size: 14px;
+     line-height: 17px;
+     color: #000000;
+     margin-top: 0;
+     margin-bottom: 25px;
+    }
+   
+    .main-nav-list {
+      list-style: none;
+      padding: 0;
+
+    }
+
+    .submenu-item {
+      margin-bottom: 18px;
+    }
+
+   .main-nav-link {
+     text-transform: uppercase;
+     text-decoration: none;
+     font-size: 14px;
+     line-height: 17px;
+     color: $concept-color;
+   }
+
+   .submenu-list {
+     margin-top: 15px;
+    list-style: none;
+    padding: 0;
+    padding-left: 20px;
+   }
+   
+   .sabmenu-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    &:hover {
+      color: $concept-color;
+      text-decoration: underline;
+    }
+   }

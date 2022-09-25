@@ -1,0 +1,116 @@
+/* Продукты */
+
+.products {
+    padding: 30px 0 103px 0;
+
+        &-title{
+        text-align: center;
+        font-weight: normal;
+      font-size: 30px;
+      line-height: 1.5;
+      color: #222222;
+      margin-bottom: 10px;
+      margin-top: 0;
+      }
+      
+      &-desc {
+        text-align: center;
+        font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #9F9F9F;
+      margin-bottom: 16px;
+      }
+      
+      &-list{
+    padding-top: 30px;
+    padding-left: 0;
+    margin-bottom: 60px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    @media (max-width: 1172px) {
+      gap: 15px;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      margin: -10px;
+      margin-bottom: 40px;
+      }
+    }
+
+    @media (max-width: 1172px) {
+      padding-top: 0;
+    }
+}
+
+    .products-item2 {
+      background-color: #F8F8F8;
+      width: 360px;
+      padding-bottom: 10px;
+      position: relative;
+      @media (max-width: 767px) {
+        width: 359px;      
+      }
+    }
+  
+.products-overlay2 {
+  background-color: rgba(58, 56, 56, 0.86);
+ position: absolute;
+ width: 100%;
+ height: 420px;
+
+  @include flex-center;
+  transition-duration: 1s;
+  opacity: 0;
+ }
+
+.buy-add2 { //кнопка для покупки выбранного товара
+  padding: 16px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  fill: #fff;
+  background-color: transparent;
+  border: 1px solid $concept-color ;
+  @include flex-center;
+  transition-duration: 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+    }
+}
+
+.products-item2:hover .products-overlay2 {
+opacity: 1;
+}
+
+.buy-add2 svg {
+padding-right: 11px;
+}
+
+  .product-text-box{
+    padding: 0 18px;
+  }
+  
+  .product-name {
+    font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  }
+  .product-text{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+  }
+  .product-price{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+  }

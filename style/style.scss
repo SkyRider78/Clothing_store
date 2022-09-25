@@ -1,0 +1,38 @@
+/* Подключение переменных */ 
+@import "_vars.scss";
+
+/* Подключение примесей */ 
+@import "_mixins.scss";
+
+/* Подключение основной части (центровщика) */
+@import "_main.scss";
+
+/* Подключение шапки сайта */
+@import "blocks/_header.scss";
+
+/* Подключение рекламы*/
+@import "blocks/_promo.scss";
+
+/* Подключение новинок !Страница каталога*/
+@import "blocks/_arrivals.scss";
+
+/* Подключение регистрции пользователя !Страница регистрации пользователя*/
+@import "blocks/_registration.scss";
+
+/* Подключение предложений*/
+@import "blocks/_offer.scss";
+
+/* Подключение каталога !Страница каталога*/
+@import "blocks/_catalog.scss";
+
+/* Подключение продуктов*/
+@import "blocks/_products.scss";
+
+/* Подключение преимуществ магазина*/
+@import "blocks/_features.scss";
+
+/* Подключение обратной связи*/
+@import "blocks/_feedback.scss";
+
+/* Подключение подвала сайта*/
+@import "blocks/_page-footer.scss";

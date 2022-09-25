@@ -1,0 +1,30 @@
+/* Примеси */
+
+@mixin concept-hover {
+  color: #fff;
+  background-color: $concept-color;
+  transition-duration: 0.5s;
+  }
+
+@mixin standart-button {
+    padding: 10px 38px;
+    border: 1px solid $concept-color;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $concept-color;
+  text-decoration: none;
+}
+
+@mixin flex-sp-between {
+  display:flex;
+  align-items: center;  
+  justify-content: space-between;
+}
+
+@mixin flex-center {
+    display:flex;
+    align-items: center;  
+    justify-content: center;
+  }

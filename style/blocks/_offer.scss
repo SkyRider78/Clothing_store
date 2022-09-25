@@ -1,0 +1,108 @@
+/* Предложения */
+
+.offer {
+    padding:65px 0;
+    @media (max-width: 1172px) {
+      padding-top: 20px;
+      padding-bottom: 0px;
+      margin-bottom: 164px;
+    }
+    @media (max-width: 767px) {
+      padding-top: 64px;
+      margin-bottom: 72px;
+      }
+    }
+    
+    .offer-wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+      @media (max-width: 1172px) {
+        gap: 19px;
+      }
+       }
+    
+     .offer-text-up {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+       }
+    
+     .offer-text-down{
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+      color: $concept-color;
+      }
+    
+     .offer-img-1 {
+      width: 360px;
+      height: 260px;
+      background-image: url("../pic/offer/1-women.png");
+      @include flex-center;
+      text-align: center;
+      @media (max-width: 1172px) {
+        width: 232px;
+      height: 168px;
+      background-size: contain;
+      }
+      @media (max-width: 767px) {
+        width: 343px;
+      height: 247px;
+      }
+      }    
+      
+     .offer-img-2 {
+      width: 360px;
+      height: 260px;
+      background-image: url("../pic/offer/2-men.png");
+      @include flex-center;
+      text-align: center;
+      @media (max-width: 1172px) {
+        width: 232px;
+      height: 168px;
+      background-size: contain;
+      }
+      @media (max-width: 767px) {
+        width: 343px;
+      height: 247px;
+      }
+     }
+    
+     .offer-img-3 {
+      width: 360px;
+      height: 260px;
+      background-image: url("../pic/offer/3-kids.png");
+      @include flex-center;
+      text-align: center;
+      @media (max-width: 1172px) {
+        width: 232px;
+      height: 168px;
+      background-size: contain;
+      }
+      @media (max-width: 767px) {
+        width: 343px;
+      height: 247px;
+      }
+     }
+    
+     .offer-img-4 {
+      width: 100%;
+      height: 180px;
+      background-image: url("../pic/offer/4-ACCESORIES.png");
+      background-repeat: no-repeat;
+      @include flex-center;
+      text-align: center;
+      @media (max-width: 1172px) {
+        width: 100%;
+      height: 116px;
+      background-size: contain;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      height: 111px;
+      background-size: cover;
+      }
+     }
